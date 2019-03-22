@@ -3,7 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 	   http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="djNewsProvider" class="com.springjiemi.ioc.fxsystem.FXNewsProvider" autowire="constructor"/>
-    <bean id="djNewsListener" class="com.springjiemi.ioc.fxsystem.DowJonesNewsListener"/>
-    <!--<bean id="djNewsPersister" class="com.springjiemi.ioc.fxsystem.DowJonesNewsPersister"/>-->
+    <bean id="nextDayDateDisplayer" class="com.springjiemi.ioc.factorybean.NextDayDateDisplayer">
+        <property ref="nextDayDate" name="dateOfNextDay"/>
+    </bean>
+    <bean id="nextDayDate" class="com.springjiemi.ioc.factorybean.NextDayDateFactory"/>
 </beans>

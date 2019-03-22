@@ -1,5 +1,7 @@
-package com.springjiemi.ioc;
+package com.springjiemi.ioc.fxsystem;
 
+import com.springjiemi.ioc.fxsystem.FXNewsBean;
+import com.springjiemi.ioc.fxsystem.IFXNewsPersister;
 import org.springframework.stereotype.Component;
 
 /**

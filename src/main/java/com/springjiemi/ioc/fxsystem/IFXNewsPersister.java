@@ -1,4 +1,4 @@
-package com.springjiemi.ioc;
+package com.springjiemi.ioc.fxsystem;
 
 /**
  * @author yanwu233

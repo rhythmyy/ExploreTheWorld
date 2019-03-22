@@ -1,5 +1,8 @@
 package com.springjiemi.ioc;
 
+import com.springjiemi.ioc.fxsystem.DowJonesNewsListener;
+import com.springjiemi.ioc.fxsystem.DowJonesNewsPersister;
+import com.springjiemi.ioc.fxsystem.FXNewsProvider;
 import org.springframework.beans.MutablePropertyValues;
 import org.springframework.beans.PropertyValue;
 import org.springframework.beans.factory.BeanFactory;

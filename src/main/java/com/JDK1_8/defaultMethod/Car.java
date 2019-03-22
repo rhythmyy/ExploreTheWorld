@@ -1,6 +1,6 @@
 package com.JDK1_8.defaultMethod;
 
-import org.jetbrains.annotations.Contract;
+
 
 /**
  * @author yanwu233
@@ -16,7 +16,7 @@ public class Car implements Vehicle, FourWheelVehicle {
         System.out.println("this is a car");
     }
 
-    @Contract
+
     public static void main(String[] args) {
         // 静态方法中不能使用 Vehicle.super, 这样是调用父接口的实例方法.
         // Vehicle.

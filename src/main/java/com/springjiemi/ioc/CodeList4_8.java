@@ -1,5 +1,6 @@
 package com.springjiemi.ioc;
 
+import com.springjiemi.ioc.fxsystem.FXNewsProvider;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;

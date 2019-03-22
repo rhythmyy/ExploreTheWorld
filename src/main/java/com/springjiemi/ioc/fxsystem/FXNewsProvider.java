@@ -1,4 +1,4 @@
-package com.springjiemi.ioc;
+package com.springjiemi.ioc.fxsystem;
 
 import org.apache.commons.lang.ArrayUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +11,12 @@ import org.springframework.stereotype.Component;
 @Component
 public class FXNewsProvider {
     @Autowired
-    private IFXNewsListener newsListener;
+    IFXNewsListener newsListener;
 
     @Autowired
-    private IFXNewsPersister newsPersister;
+    IFXNewsPersister newsPersister;
 
-    public  FXNewsProvider(){
+    public FXNewsProvider() {
 
     }
 
@@ -47,6 +47,14 @@ public class FXNewsProvider {
 
     public void setNewsPersister(IFXNewsPersister newsPersister) {
         this.newsPersister = newsPersister;
+    }
+
+    public IFXNewsListener getNewsListener() {
+        return newsListener;
+    }
+
+    public IFXNewsPersister getNewsPersister() {
+        return newsPersister;
     }
 }
 
