@@ -8,6 +8,16 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-2.5.xsd">
     <context:component-scan base-package="com.springjiemi.ioc"/>
+    <bean name="xMailer" class="com.springjiemi.ioc.applicationcontext.UniformResourceLoadingStrategy.XMailer">
+        <property name="resource" value="resource.json"/>
+    </bean>
 
-
+    <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basenames">
+            <set>
+                <value>messages</value>
+                <value>errorcodes</value>
+            </set>
+        </property>
+    </bean>
 </beans>
